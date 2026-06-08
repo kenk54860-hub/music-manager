@@ -1,6 +1,17 @@
 {
     "songs": [
         {
+            "id": "song_6a26c624917e88.25320990",
+            "title": "NO BATIDÃO (Slowed)",
+            "artist": "fonk",
+            "album": "",
+            "audio": "uploads\/audio\/audio_6a26c624908cd4.09776634.mp3",
+            "cover": "uploads\/covers\/cover_6a26c6249134c0.06990217.jpg",
+            "duration": "",
+            "uploaded": "2026-06-08 15:39:48",
+            "plays": 0
+        },
+        {
             "id": "song_6a26bbcf690387.92809423",
             "title": "worry (ultra slowed)",
             "artist": "fonk",
@@ -20,7 +31,7 @@
             "cover": "uploads\/covers\/cover_6a26ad19307f38.53417020.jpg",
             "duration": "6:14",
             "uploaded": "2026-06-08 13:52:57",
-            "plays": 1
+            "plays": 2
         },
         {
             "id": "song_6a26ac35619ae2.99834478",
@@ -31,7 +42,7 @@
             "cover": "uploads\/covers\/cover_6a26ac35616b84.84855885.jpg",
             "duration": "2:25",
             "uploaded": "2026-06-08 13:49:09",
-            "plays": 5
+            "plays": 6
         },
         {
             "id": "song_6a26abb05b3273.48825312",
@@ -42,7 +53,7 @@
             "cover": "uploads\/covers\/cover_6a26abb05b0397.25158801.jpg",
             "duration": "5:23",
             "uploaded": "2026-06-08 13:46:56",
-            "plays": 6
+            "plays": 7
         }
     ]
 }
