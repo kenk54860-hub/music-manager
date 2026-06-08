@@ -7,9 +7,9 @@
             "album": "",
             "audio": "uploads\/audio\/audio_6a26ad19305e80.72714920.mp3",
             "cover": "uploads\/covers\/cover_6a26ad19307f38.53417020.jpg",
-            "duration": "",
+            "duration": "6:14",
             "uploaded": "2026-06-08 13:52:57",
-            "plays": 0
+            "plays": 1
         },
         {
             "id": "song_6a26ac35619ae2.99834478",
@@ -20,7 +20,7 @@
             "cover": "uploads\/covers\/cover_6a26ac35616b84.84855885.jpg",
             "duration": "2:25",
             "uploaded": "2026-06-08 13:49:09",
-            "plays": 3
+            "plays": 4
         },
         {
             "id": "song_6a26abb05b3273.48825312",
@@ -31,7 +31,7 @@
             "cover": "uploads\/covers\/cover_6a26abb05b0397.25158801.jpg",
             "duration": "5:23",
             "uploaded": "2026-06-08 13:46:56",
-            "plays": 3
+            "plays": 5
         }
     ]
 }
