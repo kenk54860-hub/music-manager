@@ -1,0 +1,37 @@
+{
+    "songs": [
+        {
+            "id": "song_6a26ad1930a593.58999818",
+            "title": "ROMANCEPLANET - FALL FROM THE SKY PT.2 (SLOWED + EXTENDED)",
+            "artist": "fonk",
+            "album": "",
+            "audio": "uploads\/audio\/audio_6a26ad19305e80.72714920.mp3",
+            "cover": "uploads\/covers\/cover_6a26ad19307f38.53417020.jpg",
+            "duration": "",
+            "uploaded": "2026-06-08 13:52:57",
+            "plays": 0
+        },
+        {
+            "id": "song_6a26ac35619ae2.99834478",
+            "title": "HAZA SLOWED (BRAZILIAN PHONK)",
+            "artist": "fonk",
+            "album": "",
+            "audio": "uploads\/audio\/audio_6a26ac35614539.67919126.mp3",
+            "cover": "uploads\/covers\/cover_6a26ac35616b84.84855885.jpg",
+            "duration": "2:25",
+            "uploaded": "2026-06-08 13:49:09",
+            "plays": 3
+        },
+        {
+            "id": "song_6a26abb05b3273.48825312",
+            "title": "Điều Anh Biết",
+            "artist": "Chi Dân",
+            "album": "",
+            "audio": "uploads\/audio\/audio_6a26abb05ae050.10898462.mp3",
+            "cover": "uploads\/covers\/cover_6a26abb05b0397.25158801.jpg",
+            "duration": "5:23",
+            "uploaded": "2026-06-08 13:46:56",
+            "plays": 3
+        }
+    ]
+}
