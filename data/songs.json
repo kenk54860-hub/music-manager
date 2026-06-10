@@ -1,125 +1,17 @@
 {
     "songs": [
         {
-            "id": "song_6a26d313701596.03072008",
-            "title": "MONTAGEM XUE (Chinese Funk + Phonk) DJ VGK1, 0hex",
-            "artist": "fonk",
-            "album": "",
-            "audio": "uploads\/audio\/audio_6a26d3136fc065.48070608.mp3",
-            "cover": "uploads\/covers\/cover_6a26d3136fe348.23327910.jpg",
-            "duration": "",
-            "uploaded": "2026-06-08 16:34:59",
-            "plays": 0
-        },
-        {
-            "id": "song_6a26d2cada2030.30350107",
-            "title": "VOCE NA MIRA JUMPSTYLE - Sxilwix, Hwungii &amp; DJ VGK1",
-            "artist": "fonk",
-            "album": "",
-            "audio": "uploads\/audio\/audio_6a26d2cad9bb82.61893337.mp3",
-            "cover": "uploads\/covers\/cover_6a26d2cad9ded5.83010907.jpg",
-            "duration": "",
-            "uploaded": "2026-06-08 16:33:46",
-            "plays": 0
-        },
-        {
-            "id": "song_6a26d1b9c469d6.99409515",
-            "title": "MONTAGEM FINAL",
-            "artist": "fonk",
-            "album": "",
-            "audio": "uploads\/audio\/audio_6a26d1b9c3e6e1.18567772.mp3",
-            "cover": "uploads\/covers\/cover_6a26d1b9c42c63.82282468.jpg",
-            "duration": "",
-            "uploaded": "2026-06-08 16:29:13",
-            "plays": 0
-        },
-        {
-            "id": "song_6a26d16e67b124.25052129",
-            "title": "MI AMOR - bxkq x axeos",
-            "artist": "fonk",
-            "album": "",
-            "audio": "uploads\/audio\/audio_6a26d16e66e8e8.41194483.mp3",
-            "cover": "uploads\/covers\/cover_6a26d16e6774f2.74178776.jpg",
-            "duration": "",
-            "uploaded": "2026-06-08 16:27:58",
-            "plays": 0
-        },
-        {
-            "id": "song_6a26d12d8777c3.15611706",
-            "title": "HEAVENLY JUMPSTYLE (Tiktok Version) - TWXNY x Sxilwix x INNXCENCE",
-            "artist": "fonk",
-            "album": "",
-            "audio": "uploads\/audio\/audio_6a26d12d872006.29539238.mp3",
-            "cover": "uploads\/covers\/cover_6a26d12d874a67.07507442.jpg",
-            "duration": "",
-            "uploaded": "2026-06-08 16:26:53",
-            "plays": 0
-        },
-        {
-            "id": "song_6a26d06b434c23.74436939",
-            "title": "MONTAGEM ALQUIMIA (SLOWED) - h6itam, n7san7os &amp; Mc Menor Do Alvorada",
-            "artist": "fonk",
-            "album": "",
-            "audio": "uploads\/audio\/audio_6a26d06b42f7c4.46257303.mp3",
-            "cover": "uploads\/covers\/cover_6a26d06b431dd4.67570236.jpg",
-            "duration": "",
-            "uploaded": "2026-06-08 16:23:39",
-            "plays": 0
-        },
-        {
-            "id": "song_6a26c624917e88.25320990",
-            "title": "NO BATIDÃO (Slowed)",
-            "artist": "fonk",
-            "album": "",
-            "audio": "uploads\/audio\/audio_6a26c624908cd4.09776634.mp3",
-            "cover": "uploads\/covers\/cover_6a26c6249134c0.06990217.jpg",
-            "duration": "",
-            "uploaded": "2026-06-08 15:39:48",
-            "plays": 0
-        },
-        {
-            "id": "song_6a26bbcf690387.92809423",
-            "title": "worry (ultra slowed)",
-            "artist": "fonk",
-            "album": "",
-            "audio": "uploads\/audio\/audio_6a26bbcf68b3f1.98618828.mp3",
-            "cover": "uploads\/covers\/cover_6a26bbcf68d8e4.67983551.jpg",
-            "duration": "4:15",
-            "uploaded": "2026-06-08 14:55:43",
-            "plays": 1
-        },
-        {
-            "id": "song_6a26ad1930a593.58999818",
-            "title": "ROMANCEPLANET - FALL FROM THE SKY PT.2 (SLOWED + EXTENDED)",
-            "artist": "fonk",
-            "album": "",
-            "audio": "uploads\/audio\/audio_6a26ad19305e80.72714920.mp3",
-            "cover": "uploads\/covers\/cover_6a26ad19307f38.53417020.jpg",
-            "duration": "6:14",
-            "uploaded": "2026-06-08 13:52:57",
-            "plays": 2
-        },
-        {
-            "id": "song_6a26ac35619ae2.99834478",
-            "title": "HAZA SLOWED (BRAZILIAN PHONK)",
-            "artist": "fonk",
-            "album": "",
-            "audio": "uploads\/audio\/audio_6a26ac35614539.67919126.mp3",
-            "cover": "uploads\/covers\/cover_6a26ac35616b84.84855885.jpg",
-            "duration": "2:25",
-            "uploaded": "2026-06-08 13:49:09",
-            "plays": 6
-        },
-        {
-            "id": "song_6a26abb05b3273.48825312",
-            "title": "Điều Anh Biết",
-            "artist": "Chi Dân",
-            "album": "",
-            "audio": "uploads\/audio\/audio_6a26abb05ae050.10898462.mp3",
-            "cover": "uploads\/covers\/cover_6a26abb05b0397.25158801.jpg",
-            "duration": "5:23",
-            "uploaded": "2026-06-08 13:46:56",
-            "plays": 7
+            "id": "s_6a295d4312a3d8.14405764",
+            "title": "HOA NỞ BÊN ĐƯỜNG",
+            "artist": "QUANG ĐĂNG TRẦN",
+            "album": "OFFICIAL MUSIC VIDEO",
+            "lyrics": "",
+            "audio": "uploads\/audio\/audio_6a295d431223b1.67824460.mp3",
+            "cover": "uploads\/covers\/cover_6a295d43125d32.75333033.jpg",
+            "duration": "5:26",
+            "uploaded": "2026-06-10 14:49:07",
+            "plays": 2,
+            "likes": false
         }
     ]
 }
