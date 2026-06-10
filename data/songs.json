@@ -1,6 +1,71 @@
 {
     "songs": [
         {
+            "id": "s_6a2973cc64d6f0.60626316",
+            "title": "See Tình x Ai Đưa Em Về (Switching Vocals) \/ Nightcore",
+            "artist": "idk",
+            "album": "remix",
+            "lyrics": "",
+            "audio": "uploads\/audio\/audio_6a2973cc645f79.13820965.mp3",
+            "cover": "uploads\/covers\/cover_6a2973cc649605.55160898.jpg",
+            "duration": "",
+            "uploaded": "2026-06-10 16:25:16",
+            "plays": 0,
+            "likes": false
+        },
+        {
+            "id": "s_6a297287dca310.87776060",
+            "title": "MẬT NGỌT (HAKY REMIX)",
+            "artist": "DUNGHOANGPHAM",
+            "album": "remix",
+            "lyrics": "",
+            "audio": "uploads\/audio\/audio_6a297287dc2e14.32110263.mp3",
+            "cover": "uploads\/covers\/cover_6a297287dc62a0.69064116.jpg",
+            "duration": "5:00",
+            "uploaded": "2026-06-10 16:19:51",
+            "plays": 1,
+            "likes": false
+        },
+        {
+            "id": "s_6a2962e6a4bc30.57084640",
+            "title": "UdieNnx - STRUCT (slowed + extended)",
+            "artist": "fonk",
+            "album": "fonk",
+            "lyrics": "",
+            "audio": "uploads\/audio\/audio_6a2962e6a43b59.24872027.mp3",
+            "cover": "uploads\/covers\/cover_6a2962e6a47821.96975631.jpg",
+            "duration": "13:21",
+            "uploaded": "2026-06-10 15:13:10",
+            "plays": 5,
+            "likes": false
+        },
+        {
+            "id": "s_6a2961f43e8439.80673139",
+            "title": "HAZA SLOWED (BRAZILIAN PHONK)",
+            "artist": "fonk",
+            "album": "fonk",
+            "lyrics": "",
+            "audio": "uploads\/audio\/audio_6a2961f43e0c75.94991253.mp3",
+            "cover": "uploads\/covers\/cover_6a2961f43e4650.72582307.jpg",
+            "duration": "2:25",
+            "uploaded": "2026-06-10 15:09:08",
+            "plays": 6,
+            "likes": false
+        },
+        {
+            "id": "s_6a296150b4a2c7.10328209",
+            "title": "CÔ THẮM KHÔNG VỀ",
+            "artist": "Phát Hồ x JokeS Bii x Sinike ft. DinhLong",
+            "album": "Official Music Video",
+            "lyrics": "",
+            "audio": "uploads\/audio\/audio_6a296150b42646.30157258.mp3",
+            "cover": "uploads\/covers\/cover_6a296150b45c38.20464149.jpg",
+            "duration": "4:14",
+            "uploaded": "2026-06-10 15:06:24",
+            "plays": 4,
+            "likes": false
+        },
+        {
             "id": "s_6a295d4312a3d8.14405764",
             "title": "HOA NỞ BÊN ĐƯỜNG",
             "artist": "QUANG ĐĂNG TRẦN",
@@ -10,7 +75,7 @@
             "cover": "uploads\/covers\/cover_6a295d43125d32.75333033.jpg",
             "duration": "5:26",
             "uploaded": "2026-06-10 14:49:07",
-            "plays": 2,
+            "plays": 4,
             "likes": false
         }
     ]

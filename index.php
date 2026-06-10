@@ -187,11 +187,23 @@ canvas#vizCanvas{width:100%;height:60px;opacity:.55}
 .pb-extra{display:flex;align-items:center;gap:8px;justify-content:flex-end}
 .vol-wrap{display:flex;align-items:center;gap:8px;flex:1;max-width:160px}
 .vol-icon{color:var(--text2);flex-shrink:0}
+.vu-meter{opacity:0;transform:scaleX(.95);transition:opacity .3s,transform .3s}
+.playing .vu-meter{opacity:1;transform:scaleX(1)}
 input[type=range]{-webkit-appearance:none;height:3px;background:var(--bg3);border-radius:2px;cursor:pointer;width:100%;outline:none}
 input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:12px;height:12px;background:var(--neon);border-radius:50%}
 input[type=range]:focus{outline:none}
 .lyrics-btn,.eq-btn{background:none;color:var(--text2);padding:6px;border-radius:6px;font-size:13px;transition:color .15s}
 .lyrics-btn:hover,.eq-btn:hover,.lyrics-btn.active,.eq-btn.active{color:var(--neon)}
+
+/* ── LED VU METER (2 dãy dọc) ── */
+.vu-meter{display:flex;align-items:center;gap:6px;padding:4px 10px;background:var(--bg2);border-radius:8px;border:1px solid var(--border);flex-shrink:0}
+.vu-ch{display:flex;flex-direction:column;gap:2px;align-items:center}
+.vu-ch-label{font-size:8px;color:var(--text2);letter-spacing:.06em;margin-top:2px}
+.vu-dot{width:8px;height:6px;border-radius:2px;background:#1a1a2e;flex-shrink:0}
+.vu-dot.on-green {background:#4ade80;box-shadow:0 0 6px #4ade80cc}
+.vu-dot.on-yellow{background:#facc15;box-shadow:0 0 6px #facc15cc}
+.vu-dot.on-orange{background:#fb923c;box-shadow:0 0 6px #fb923ccc}
+.vu-dot.on-red   {background:#f87171;box-shadow:0 0 8px #f87171ee}
 
 /* ── LYRICS PANEL ── */
 .lyrics-panel{position:absolute;right:0;top:0;bottom:0;width:340px;background:var(--bg1);border-left:1px solid var(--border);display:flex;flex-direction:column;transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);z-index:20}
@@ -399,6 +411,8 @@ input[type=range]:focus{outline:none}
     </div>
     <!-- Extra -->
     <div class="pb-extra">
+      <!-- LED VU METER -->
+      <div class="vu-meter" id="vuMeter"></div>
       <button class="lyrics-btn" id="lyricsToggleBtn" onclick="toggleLyrics()" title="Lời bài hát">🎤</button>
       <button class="eq-btn" id="eqToggleBtn" onclick="toggleEQ()" title="Equalizer">🎚️</button>
       <div class="vol-wrap">
@@ -525,10 +539,69 @@ function initAudioContext() {
   prev.connect(analyser);
   analyser.connect(audioCtx.destination);
   buildEQUI();
+  buildVUMeter();
   drawViz();
+  drawVU();
 }
 
 // ── Visualizer ──
+// ── LED VU Meter (dot column style) ──
+const VU_COLS   = 14;  // số cột (kênh tần số)
+const VU_DOTS   = 7;   // số chấm mỗi cột (từ dưới lên)
+// màu theo hàng (index 0 = dưới cùng)
+const VU_COLORS = ['on-green','on-green','on-green','on-yellow','on-yellow','on-orange','on-red'];
+let vuPeakDot  = new Array(VU_COLS).fill(0);
+let vuPeakHold = new Array(VU_COLS).fill(0);
+
+function buildVUMeter() {
+  const vm = document.getElementById('vuMeter');
+  vm.querySelectorAll('.vu-col').forEach(el=>el.remove());
+  for (let c = 0; c < VU_COLS; c++) {
+    const col = document.createElement('div');
+    col.className = 'vu-col';
+    col.id = 'vuCol' + c;
+    // tạo chấm từ trên xuống (index 0 = top = mức cao nhất)
+    for (let d = VU_DOTS - 1; d >= 0; d--) {
+      const dot = document.createElement('div');
+      dot.className = 'vu-dot';
+      dot.id = `vuDot${c}_${d}`;
+      col.appendChild(dot);
+    }
+    vm.appendChild(col);
+  }
+}
+
+function drawVU() {
+  if (!analyser) return requestAnimationFrame(drawVU);
+  const data = new Uint8Array(analyser.frequencyBinCount);
+  analyser.getByteFrequencyData(data);
+  for (let c = 0; c < VU_COLS; c++) {
+    const idx = Math.floor(Math.pow(c / VU_COLS, 0.65) * (data.length * 0.55));
+    const v   = data[idx] / 255;
+    const lit = Math.round(v * VU_DOTS); // số chấm sáng từ dưới lên
+    // peak hold
+    if (lit > vuPeakDot[c]) { vuPeakDot[c] = lit; vuPeakHold[c] = 35; }
+    else if (vuPeakHold[c] > 0) vuPeakHold[c]--;
+    else vuPeakDot[c] = Math.max(0, vuPeakDot[c] - 1);
+    for (let d = 0; d < VU_DOTS; d++) {
+      const el = document.getElementById(`vuDot${c}_${d}`);
+      if (!el) continue;
+      if (d < lit) {
+        // chấm sáng — màu theo hàng
+        el.className = 'vu-dot ' + VU_COLORS[d];
+      } else if (d === vuPeakDot[c] && vuPeakDot[c] > 0) {
+        // chấm peak sáng nhạt hơn
+        el.className = 'vu-dot ' + VU_COLORS[Math.min(d, VU_COLORS.length-1)];
+        el.style.opacity = '0.5';
+      } else {
+        el.className = 'vu-dot';
+        el.style.opacity = '';
+      }
+    }
+  }
+  requestAnimationFrame(drawVU);
+}
+
 function drawViz() {
   if (!analyser) return;
   const canvas = document.getElementById('vizCanvas');
